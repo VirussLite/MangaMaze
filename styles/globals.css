@@ -1,0 +1,79 @@
+* {
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+header {
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: #117f95;
+  width: 95svw;
+  height: 95svh;
+  position: absolute;
+  inset:0;
+  margin:auto;
+  border-radius: 2rem;
+}
+nav::before{
+  content: '';
+  width: 48rem;
+  height: 20.5rem;
+  position: absolute;
+  top: -18rem;
+  left: -12.48rem;
+  background-color: white;
+  clip-path: polygon(50% 72%, 98% 72%, 83% 100%, 18% 100%, 0 72%);}
+
+@media (max-width:720px){
+   nav::before{
+    background-color: transparent;
+   }
+}
+nav{
+  height: max-content;
+  position: relative;
+  margin-top:1rem ;
+}
+header nav ol  {
+  display: flex;
+  /* background-color: blue; */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: medium;
+  font-weight: 500;
+}
+.h{
+  color: inherit;
+  z-index: 10;
+}
+.h:visited {
+  color: inherit;
+}
+#nav1{
+  width: 24vw;
+  height: 30vh;
+  }
+#nav2{
+  height: 24vh;
+  width: 50vw;
+}
+
+@media (min-width:720px) {
+  #nav2{
+    height: 32vh;
+    width: 39vw;
+    border-top-right-radius:6.8rem ;
+    border-bottom-left-radius: 6.8rem ;
+    border-top-left-radius: 3rem ;
+    border-bottom-right-radius:  3rem ;
+  }
+  #nav1{
+     width: 22vw;
+     height: 59vh;
+    border-radius: 9rem 3rem 3rem 3rem / 9rem 1.8rem 1.8rem 1.8rem;
+  }
+}
